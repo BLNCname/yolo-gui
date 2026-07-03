@@ -1,0 +1,38 @@
+# Python cache and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local virtual environments
+.venv/
+venv/
+.venv-rocm/
+.venv-rocm-win/
+
+# Local YOLO/Ultralytics outputs
+datasets/
+runs/
+.ultralytics/
+
+# Model weights and exported model binaries
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+*.pb
+*.mlpackage
+
+# Media generated during local smoke tests
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
