@@ -92,25 +92,3 @@ pytest -q
 The current tests are intentionally lightweight. They cover core object
 creation, helper behavior, basic widget wiring, and repository readiness checks.
 
-## Repository Hygiene
-
-The repository should not include local environments, ROCm build outputs,
-training runs, generated videos, or model weights. Keep those local, download
-weights separately, or publish larger artifacts through GitHub Releases or Git
-LFS if needed.
-
-Ignored by default:
-
-- `.venv-rocm/` and `.venv-rocm-win/`
-- `runs/`
-- `__pycache__/` and `.pytest_cache/`
-- `*.pt`, `*.onnx`, `*.engine`, and other model binaries
-- smoke-test videos
-
-## Interview Talking Points
-
-- Separates long-running YOLO tasks from the UI through Qt worker threads.
-- Handles common ML desktop workflows: train, infer, track, export, validate.
-- Demonstrates practical AMD/ROCm setup work on Strix Halo-class machines.
-- Includes automated tests and explicit repository hygiene for public sharing.
-
